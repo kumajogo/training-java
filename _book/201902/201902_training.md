@@ -39,36 +39,40 @@ public class HelloWorld {
 
 ### コマンド実行手順
 
-* コマンドプロンプトを起動する。　
+- コマンドプロンプトを起動する。
 
 【起動方法例】
+
 1. windowsキー＋rキーで「ファイル名を指定して実行」を起動する。
 1. cmdと入力してOKボタン または、 Enterキーを押下する。
 
 cd コマンドでカレントディレクトリ(*)を移動する。
 
-```sh
+```cmd
 cd c:¥java
 ```
 
 javacコマンドで実行したいjavaファイルをコンパイルする。
 
-```sh
+```java
 javac HelloWorld.java
 ```
+
 コンパイルが完了すると、拡張子.classファイルが作成される。
 .classを省いたファイル名をjavaコマンドで実行する。
 
-```sh
+```java
 java HelloWorld
 ```
 
 ## 型と変数
 
 まずは、型を書いて変数を書きます。
-```
+
+```java
 int hanakoAge;
 ```
+
 これで、int型のhanakoAge変数が宣言できました。  intは、整数を扱う型なのでhanakoAgeは、整数を扱う変数となります。
 変数名は、自由に付けることができます。ただし、以下のルールがあります。
 
@@ -78,16 +82,16 @@ int hanakoAge;
 今hanakoAgeは宣言しただけで、中身がありません。嘘をつきました。変数を宣言時に値を指定しなかった場合は、初期値が設定されます。
 
 |型|初期値
-|..|..
+|:--|:--|
 |byte|0
-short	0
-int	0
-long	0L
-float	0.0f
-double	0.0d
-char	'\u0000'
-boolean	false
-参照型	null
+|short|0
+|int|0
+|long|0L
+|float|0.0f
+|double|0.0d
+|char|'\u0000'
+|boolean|false
+|参照型|null
 
 変数を宣言した後は、初期化処理を行います。初期値が設定されることや、使い方を明確に分かっている場合は、初期化処理を行わなくても使うことができますが、慣れるまでは必ず初期化処理をしましょう。
 
@@ -96,9 +100,6 @@ boolean	false
 ```java
 hanakoAge = 3;
 ```
-
-
-
 
 ### プリミティブ型
 
