@@ -2,4 +2,4 @@
 
 <!-- toc -->
 
-* [java_training](./201902/training.md)
+* [java_training](./training.md)
