@@ -1,4 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [java_training](./201902/training.md)
+* [Java Training](./01_training.md)
+* [環境](./02_環境.md)
