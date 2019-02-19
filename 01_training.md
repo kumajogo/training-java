@@ -51,6 +51,8 @@ javac HelloWorld.java
 java HelloWorld
 ```
 
+[Question01](/questions/01_question.html)
+
 ## 型と変数
 
 ### 型と変数名の宣言
@@ -226,13 +228,40 @@ int型で宣言すると、32bit分の領域が確保されます。
 int i = 5;
 ```
 
-`i`に5を代入していますがコンピュータは２進数で認識するため、メモリ上で`i`には5が101で代入されます。
+`i`に5を代入していますがコンピュータは２進数で認識するため、メモリ上で`i`には5が`101`で代入されます。
+1bitで0か1を表現できるので、101は3bitの領域を使って5となります。
+
+突然ですが！ドキドキ5秒クイズ！5を代入した変数`i`は、何ビットの領域を使っているでしょうか。
+
+5
+
+4
+
+3
+
+2
+
+1
+
+たった今5は2進数で101の3bitって言ったやん！って心の中で突っ込こみをくれた人は、残念ながら不正解です！
+
+```java
+int i = 5;
+```
+
+int型で変数を宣言した時点で32bit分の領域が確保されたあとは、ずっと32bit分の領域を使って変数を取り扱います。
+なので変数`i`に`5`を代入すると前に0をたくさんつけて表示します。
+
+`00000000000000000000000000000101`が`int i = 5;`の5を32bitで表す情報です。
+intの変数は、変数が使われている間は32bitの領域を確保しているので、32bit分の整数を代入可能な状態となっているわけですね。
+イメージわきましたでしょうか？
 
 ```java
 public class VariableTest {
-    public static void main(String[] args){ int age = 35;
-        System.out.print("age:");
-        System.out.print(age);
+    public static void main(String[] args) {
+        int hanakoAge = 4;
+        System.out.print("hanakoAge:");
+        System.out.print(hanakoAge);
     }
 }
 ```
@@ -260,7 +289,9 @@ public class VariableTest {
 |++|インクリメント|x = 1; x++; // 2
 |--|デクリメント|x = 1; x--; // 0
 
-#### 演算子の評価（優先順位）
+[question2](questions/02_question.html)
+
+#### 演算子の優先順位と評価
 
 プログラミングで演算子は、評価の考えがあります。
 

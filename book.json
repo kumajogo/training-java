@@ -1,12 +1,19 @@
 {
     "plugins": [
         "navigator",
-        "toc"
+        "toc",
+        "regexplace"
     ],
     "pluginsConfig": {
         "toc": {
             "addClass": true,
             "className": "toc"
+        },
+        "regexplace": {
+            "substitutes": [
+              {"pattern": "<!-- begin div id=\"(.*)\" style=\"(.*)\" -->", "flags": "g", "substitute": "<div id=\"$1\" style=\"$2\">"},
+              {"pattern": "<!-- end div -->", "flags": "g", "substitute": "</div>"}
+            ]
         }
     }
 }
