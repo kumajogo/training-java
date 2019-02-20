@@ -7,9 +7,9 @@ public class Rectangle {
     public static void main(String[] args) {
         int widthValue = 12;
         int heightValue = 18;
-        int calRectangleResult = widthValue * heightValue
+        int rectangleResult = widthValue * heightValue
 
-        System.out.println("長方形の面積 : " + calRectangleResult);
+        System.out.println("長方形の面積 : "rectangleResult);
     }
 }
 ```

@@ -4,3 +4,5 @@
 
 * 変数を使うこと
 * 縦に横をかけて面積
+
+[Answer Example](./02_answer.html)
