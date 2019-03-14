@@ -1,29 +1,59 @@
-# Question6
+# Answer6
 
-## for文の解答
+## for文の解答例
 
-### 問題１
+### 問題１ 解答例
 
-int型変数xに対し、xに代入された数字が正か負かを判定するプログラムを作成せよ。
-ただし変数xは０の値を取らないものとする。
+```java
+int i;
 
-### 問題２
+for (i = 0; i < 3; i++) {
+    System.out.println("for文ループ");
+}
+```
 
-int型変数xに対し、xに代入された数字が正か負か０かを判定するプログラムを作成せよ。
+### 問題２ 解答例
 
-### 問題３
+```java
+int n = 5;
+int i;
 
-int型変数xに対し、xに代入された数字が奇数か偶数かを判定するプログラムを作成せよ。
-ただし変数xは正の数に限定する。
+for ( i = 0; i < n; i++) {
+    System.out.println("for文ループ");
+}
+```
 
-### 問題４
+### 問題３ 解答例
 
-int型変数xに対し、xに代入された数字が10の倍数かそうでないかを判定するプログラムを作成せよ。
-ただし変数xは正の数に限定する。
+```java
+int n = 5;
+int i;
 
-### 問題５
+for(i = 0; i <= n; i++) {
+    System.out.println(i);
+}
+```
 
-int型変数x、yに対しx÷yの演算が割り切れるかどうかを判定するプログラムを作成せよ。
-ただし変数xは正の数に限定する。
+### 問題４ 解答例
 
-[Answer Example](./05_answer.html)
+```java
+int n = 5;
+int i;
+
+for (i = n; i >= 0; i--) {
+    System.out.println(i);
+}
+```
+
+### 問題５ 解答例
+
+```java
+int n = 5;
+int i;
+
+for (i =0; i <= n; i++) {
+    System.out.println(i*2);
+}
+```
+
+[Answer Example](./06_question.html)
